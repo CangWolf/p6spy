@@ -24,10 +24,9 @@ import com.p6spy.engine.logging.Category;
 import java.io.PrintStream;
 
 public class StdoutLogger extends FormattedLogger {
-  private PrintStream stream;
 
   protected PrintStream getStream() {
-    return stream;
+    return System.out;
   }
 
   @Override
