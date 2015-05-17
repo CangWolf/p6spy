@@ -50,7 +50,7 @@ public class FileLogger extends StdoutLogger {
     if( printStream == null ) {
       init();
     }
-    return getStream();
+    return printStream;
   }
 
   public void setLogfile(String fileName) {
